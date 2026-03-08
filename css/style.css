@@ -1,0 +1,109 @@
+/* Reset default browser styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body styling */
+body{
+    background:#8494FF;
+    color:#333;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:30px;
+    background:#6367FF;
+    color:white;
+}
+
+header h1{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:16px;
+}
+
+/* Restaurant container layout */
+.restaurant-container{
+    width:90%;
+    margin:40px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* Restaurant card */
+.restaurant-card{
+    background:#C9BEFF;
+    border-radius:10px;
+    overflow:hidden;
+    text-decoration:none;
+    color:black;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+    transition:transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect */
+.restaurant-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Restaurant image */
+.restaurant-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+/* Card content */
+.card-content{
+    padding:15px;
+}
+
+.card-content h2{
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.card-content p{
+    font-size:14px;
+    margin-bottom:6px;
+}
+
+/* Rating style */
+.rating{
+    color:#ff9800;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:#6367FF;
+    color:white;
+}
+
+/* Responsive for small screens */
+@media(max-width:600px){
+
+    header h1{
+        font-size:24px;
+    }
+
+    .restaurant-card img{
+        height:150px;
+    }
+
+}
